@@ -1,7 +1,7 @@
 # DOCKER-VERSION 1.6.0
 # VERSION 0.1
 
-FROM openfirmware/mapnik
+FROM vincentds1/mapnik
 
 RUN apt-get update && apt-get install -y apache2 apache2-dev autoconf build-essential git libtool runit
 
