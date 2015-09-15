@@ -37,5 +37,8 @@ COPY ./setup.sh setup.sh
 COPY runit_bootstrap /usr/sbin/runit_bootstrap
 RUN chmod 755 /usr/sbin/runit_bootstrap
 
+ENV START_CMD="/var/lib/mod_tile/setup.sh"
+ADD ./start.sh /etc/start.sh
+
 EXPOSE 80
-ENTRYPOINT ["/var/lib/mod_tile/setup.sh"]
+ENTRYPOINT ["/bin/bash"]

@@ -1,6 +1,6 @@
 #!/bin/bash
 set -e
-
+echo "setting up renderd.."
 # Rebuild renderd configuration
 cp renderd.conf /etc/renderd.conf
 for i in /usr/local/share/maps/style/*; do
